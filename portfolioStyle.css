@@ -1,15 +1,16 @@
 body {
-  font-family: Julius Sans One, sans-serif;
-  font-size: 1.4rem;
-  inline-height: 1.6;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.4rem bold;
+  line-height: 1.6;
   height: 100%;
   width: 100%;
   margin: 0 auto;
-  background-color: #00796B
+  background-color: #dcf0c2;
+  color: #3d5845;
 }
 
 .container {
-  background-color: #00796B ;
+  background-color: #dcf0c2;
   height: 60px;
   position: fixed;
   top: 0;
@@ -38,12 +39,12 @@ body {
 }
 #navbar a {
   text-decoration: none;
-  color: white;
+  color: #3d5845;
   cursor: pointer;
 }
 #navbar a:hover,
 #navbar a:focus {
-  color: #004D40;
+  color:  #cfcfcf;
 }
 #welcome-section {
   height: 100vh;
@@ -51,9 +52,16 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url("https://i.imgur.com/DzPQIHt.jpg");
-  margin-top: 60px;
+  background-image: url('./images/welcome-img.jpg');
+  background-size: 100%;
 
+
+}
+
+.intro {
+  border: 5px #dcf0c2 dotted;
+  padding: 40px;
+  margin: 0;
 }
 #projects {
   text-align: center;
@@ -61,23 +69,14 @@ body {
 }
 
 .grid-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  width: 100%;
-  float: right;
-}
-.row {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: 0;
-  padding: 1rem 0;
+  display: grid;
+  grid-template-rows: repeat(2, 50%);
+  grid-template-columns: repeat(2, 50%);
 }
 .project-tile {
-  width: 550px;
+  padding: 20px;
 }
-#tribute-link {
+/* #tribute-link {
   text-decoration: none;
   font-size: 1.1rem;
   color: white;
@@ -86,11 +85,13 @@ body {
   border-radius: 4px;
   margin: 0;
   padding: 4px;
-}
+} */
 h2 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
-  color: white;
+  color: #3d5845;
+  /* border: 5px #d6c1db dotted ; */
+  /* padding: 20px; */
 }
 #project-link {
    cursor: pointer;
@@ -101,15 +102,15 @@ h2 {
 }
 #profile-links a {
   font-size: 3.5rem;
-  color: white;
+  color: #3d5845;
   padding: 2rem;
   cursor: pointer;
 }
 #profile-links a:hover,
 #profile-links a:focus {
-  color: #37474F;
+  color: #cfcfcf;
 }
-@media (max-width: 675px) {
+/* @media (max-width: 675px) {
   .grid-container {
     position: absolute;
     display: block;
@@ -121,10 +122,10 @@ h2 {
     color: white;
     padding: .5rem;
   }
-}
+} */
 #footer {
-  color: white;
-  font-size: 1rem;
+  color: #3d5845;
+  font-size: 0.5rem;
   text-align: center;
   margin: 2em;
 }
