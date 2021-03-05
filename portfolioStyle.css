@@ -42,14 +42,14 @@ body {
   text-decoration: none;
   color: #3d5845;
   cursor: pointer;
-  padding: 5px;
+  padding: 10px;
 }
 #navbar a:hover,
 #navbar a:focus {
-  padding: 5px;
-  border-radius: 5px;
-  color:  #302f2f;
+  border-radius: 20px;
+  color:  #f8f6f6;
   box-shadow: 2px 2px 5px grey;
+  background-color: #3d5845;
 }
 #welcome-section {
   height: 100vh;
@@ -96,7 +96,7 @@ p {
   height: auto;
   padding: 20px;
   border-radius: 10px;
-  margin: 10px; 
+  margin: 20px; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,12 +113,17 @@ p {
   padding: 5px;
   margin: 30px 0 25px 0;
 }
-
+.first-column {
+  justify-self: end;
+}
+.second-column {
+  justify-self: start;
+}
 .project-tile a {
   font-size: .8rem;
   cursor: pointer;
   text-decoration: none;
-  color: black;
+  color: #3d5845;
   padding: 10px;
   margin: 5px; 
   border: 1px solid  #c4c5c2;
@@ -129,11 +134,8 @@ p {
    text-decoration: none;
    color:  #fcfafa;
    box-shadow: 2px 2px 5px #808080;
-   background-color: #c4c5c2;
+   background-color:  #3d5845;
  }
-.project-description {
-  padding: 20px;
-}
 
 /* contact section */
 #profile-links {
@@ -143,7 +145,7 @@ p {
 }
 #profile-links a {
   text-decoration: none;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: #3d5845;
   cursor: pointer;
   padding: 2rem;
