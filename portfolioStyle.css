@@ -19,6 +19,11 @@ body {
   width: 100%;
   margin: 0;
 }
+.logo {
+  height: 50px;
+  padding: 5px;
+  margin-left: 10px;
+}
 #navbar {
   position: fixed;
   top: 0;
@@ -53,27 +58,67 @@ body {
 }
 #welcome-section {
   height: 100vh;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   background-image: url('./images/welcome-img.jpg');
   background-size: 100%;
-
-
 }
-
 .intro {
   border: 5px #dcf0c2 dotted;
   border-radius: 20px;
   padding: 40px;
-  margin: 0;
+  
 }
-h1, h2 {
-  font-size: 1.6rem;
+
+h1 {
+  font-size: 2rem;
   text-align: center;
   color: #3d5845;
-  
+  margin: 0;
+}
+
+.intro a {
+  font-size: .8rem;
+  color: #3d5845;
+  background-color: #dcf0c2;
+  text-decoration: none;
+  color: #3d5845;
+  padding: 10px; 
+  margin: 10px;
+  border: 1px solid  #c4c5c2;
+  border-radius: 30px;
+
+}
+.intro a:hover,
+.intro a:focus {
+  text-decoration: none;
+   color:  #fcfafa;
+   box-shadow: 2px 2px 5px #808080;
+   background-color:  #3d5845;
+}
+#skills {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.tools-techs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.icons {
+  font-size: 3rem;
+  color: #3d5845;
+}
+.icons:hover
+.icons:focus {
+  color: #cfcfcf;
+  text-shadow: 2px 2px 5px #808080;
 }
 p {
   font-size: .8rem;
