@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Kesinee</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,34 +16,40 @@
   <link rel="apple-touch-icon" href="icon.png">
 
   <link rel="stylesheet" href="portfolioStyle.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/a6b997e76b.js" crossorigin="anonymous"></script>
-  <meta name="theme-color" content="#fafafa">
+  <!-- <meta name="theme-color" content="#fafafa"> -->
 </head>
 
 <body>
 
   <header>
-    <div class="container">
+    <nav>
       <img class="logo" src="images/LogoGreen.png" alt="logo" />
-      <nav id="navbar">
-        <ul>
-          <li><a class="nav-link" href="#welcome-section">About</a></li>
-          <li><a class="nav-link" href="#projects">Projects</a></li>
-          <li><a class="nav-link" href="#profile-links">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+      <ul class="nav-links">
+        <li><a href="#welcome-section">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#profile-links">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
   </header>
 
   <section id="welcome-section">
     <div class="intro">
       <h1>Kesinee Powers</h1>
       <h2>Front-end Web Developer</h2>
-      <a class="resume" href="#" target="_blank">My Resume</a>
+      <div class="resume">
+        <a href="#" target="_blank">My Resume</a>
+      </div>
     </div>
+
     <div id="skills">
       <h4>Tools & Technologies</h4>
       <div class="tools-techs">
@@ -71,67 +77,91 @@
 
   <section id="projects">
     <h2>Projects</h2>
+
     <div class="grid-container">
+      <div class="project-tile first-column">
+        <div class="project-first-section">
+          <h3>Calculator</h3>
+          <img class="project-preview" src="images/calculator-project.png" width="300px" height="300px" />
+        </div>
+        <div class="project-second-section">
+          <p>This is a sentence. Some more text here.</p>
+          <p>**HTML, JavaScript, React**</p>
+          <div class="links">
+            <a href="https://kesineep.github.io/calculator" target="_blank">View demo</a>
+            <a href="https://github.com/KesineeP/calculator" target="_blank">View code</a>
+          </div>
+        </div>
+      </div>
 
-      <div class="project-tile first-column">
-        <h3>Calculator</h3>
-        <img class="project-preview" src="images/calculator-project.png" width="300px" height="300px" />
-        <p>This is a sentence. Some more text here.</p>
-        <p>**HTML, JavaScript, React**</p>
-        <div class="links">
-          <a href="https://kesineep.github.io/calculator" target="_blank">View demo</a>
-          <a href="https://github.com/KesineeP/calculator" target="_blank">View code</a>
-        </div>
-      </div>
-
       <div class="project-tile second-column">
-        <h3>Todo List</h3>
-        <img class="project-preview" src="images/Todo-List-project.png" width="300" height="300px" />
-        <p>This is a sentence. Some more text here.</p>
-        <p>**HTML, JavaScript, React**</p>
-        <div class="links">
-          <a href="https://kesineep.github.io/todo-list-react/" target="_blank">View demo</a>
-          <a href="https://github.com/KesineeP/todo-list-react/" target="_blank">View code</a>
+        <div class="project-first-section">
+          <h3>Todo List</h3>
+          <img class="project-preview" src="images/Todo-List-project.png" width="300" height="300px" />
+        </div>
+        <div class="project-second-section">
+          <p>This is a sentence. Some more text here.</p>
+          <p>**HTML, JavaScript, React**</p>
+          <div class="links">
+            <a href="https://kesineep.github.io/todo-list-react/" target="_blank">View demo</a>
+            <a href="https://github.com/KesineeP/todo-list-react/" target="_blank">View code</a>
+          </div>
         </div>
       </div>
       <div class="project-tile first-column">
-        <h3>Ada Lovelace</h3>
-        <img class="project-preview" src="images/AdaLovelace-pageImage.png" width="300" height="300px" />
-        <p>This is a sentence. Some more text here.</p>
-        <p>**HTML, JavaScript, React**</p>
-        <div class="links">
-          <a href="https://kesineep.github.io/AdaLovelace-tributePage" target="_blank">View demo</a>
-          <a href="https://github.com/KesineeP/AdaLovelace-tributePage" target="_blank">View code</a>
+        <div class="project-first-section">
+          <h3>Ada Lovelace</h3>
+          <img class="project-preview" src="images/AdaLovelace-pageImage.png" width="300" height="300px" />
+        </div>
+        <div class="project-second-section">
+          <p>This is a sentence. Some more text here.</p>
+          <p>**HTML, JavaScript, React**</p>
+          <div class="links">
+            <a href="https://kesineep.github.io/AdaLovelace-tributePage" target="_blank">View demo</a>
+            <a href="https://github.com/KesineeP/AdaLovelace-tributePage" target="_blank">View code</a>
+          </div>
         </div>
       </div>
       <div class="project-tile second-column">
-        <h3>Survey Form</h3>
-        <img class="project-preview" src="images/SurveyForm-ProjectImage.png" width="300" height="300px" />
-        <p>This is a sentence. Some more text here.</p>
-        <p>**HTML, JavaScript, React**</p>
-        <div class="links">
-          <a href="https://kesineep.github.io/SurveyForm" target="_blank">View demo</a>
-          <a href="https://github.com/KesineeP/SurveyForm" target="_blank">View code</a>
+        <div class="project-first-section">
+          <h3>Survey Form</h3>
+          <img class="project-preview" src="images/SurveyForm-ProjectImage.png" width="300" height="300px" />
+        </div>
+        <div class="project-second-section">
+          <p>This is a sentence. Some more text here.</p>
+          <p>**HTML, JavaScript, React**</p>
+          <div class="links">
+            <a href="https://kesineep.github.io/SurveyForm" target="_blank">View demo</a>
+            <a href="https://github.com/KesineeP/SurveyForm" target="_blank">View code</a>
+          </div>
         </div>
       </div>
       <div class="project-tile first-column">
-        <h3>Product Landing Page</h3>
-        <img class="project-preview" src="images/projectLanding-img.png" width="300" height="300px" />
-        <p>This is a sentence. Some more text here.</p>
-        <p>**HTML, JavaScript, React**</p>
-        <div class="links">
-          <a href="https://kesineep.github.io/ProjectLandingPage/" target="_blank">View demo</a>
-          <a href="https://github.com/KesineeP/ProjectLandingPage" target="_blank">View code</a>
+        <div class="project-first-section">
+          <h3>Product Landing Page</h3>
+          <img class="project-preview" src="images/projectLanding-img.png" width="300" height="300px" />
+        </div>
+        <div class="project-second-section">
+          <p>This is a sentence. Some more text here.</p>
+          <p>**HTML, JavaScript, React**</p>
+          <div class="links">
+            <a href="https://kesineep.github.io/ProjectLandingPage/" target="_blank">View demo</a>
+            <a href="https://github.com/KesineeP/ProjectLandingPage" target="_blank">View code</a>
+          </div>
         </div>
       </div>
       <div class="project-tile second-column">
-        <h3>Css Documentation Page</h3>
-        <img class="project-preview" src="images/DocumentationPage-img.png" width="300" height="300px" />
-        <p>This is a sentence. Some more text here.</p>
-        <p>**HTML, JavaScript, React**</p>
-        <div class="links">
-          <a href="https://kesineep.github.io/CSSDocumentationPage" target="_blank">View demo</a>
-          <a href="https://github.com/KesineeP/CSSDocumentationPage" target="_blank">View code</a>
+        <div class="project-first-section">
+          <h3>Css Documentation Page</h3>
+          <img class="project-preview" src="images/DocumentationPage-img.png" width="300" height="300px" />
+        </div>
+        <div class="project-second-section">
+          <p>This is a sentence. Some more text here.</p>
+          <p>**HTML, JavaScript, React**</p>
+          <div class="links">
+            <a href="https://kesineep.github.io/CSSDocumentationPage" target="_blank">View demo</a>
+            <a href="https://github.com/KesineeP/CSSDocumentationPage" target="_blank">View code</a>
+          </div>
         </div>
       </div>
     </div>
@@ -176,6 +206,7 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script src="index.js"></script>
 </body>
 
 
