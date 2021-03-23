@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 body {
-  /* font-family: 'Nanum Gothic Coding', monospace; */
   font-family: 'Cutive Mono', monospace;
   font-size: 1.8rem bold;
   line-height: 1.6;
@@ -179,6 +178,12 @@ h4 {
   box-shadow: 2px 2px 5px gray;
   margin-top: 15px;
 }
+.project-second-section {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .links{
   padding: 5px;
   margin: 10px 0 25px 0;
@@ -311,6 +316,7 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
   }
   .project-preview {
     margin-bottom: 0;
@@ -368,6 +374,9 @@ h4 {
     width: 80%;
     
   }
+  .project-tile {
+    width: 100%;
+  }
   h1 {
     font-size: 2rem;
   }
@@ -424,6 +433,9 @@ h4 {
     h2 {
       font-size: 1rem;
       margin-bottom: 10px;
+    }
+    h3 {
+      font-size: 1em;
     }
     .intro a {
       font-size: 0.6rem;
@@ -496,11 +508,12 @@ h4 {
     .project-tile {
       width: 100%;
     }
-    .project-tile a {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-
+    .project-first-section {
+      margin: 0;
+    }
+    h4 {
+      font-size: .8rem;
+      margin-bottom: 0;
     }
   }
   @media screen and (max-width: 360px) {
