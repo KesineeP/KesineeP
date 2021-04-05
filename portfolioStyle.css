@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-padding-top: 120px; /* height of sticky header */
+}
 body {
   font-family: 'Cutive Mono', monospace;
   font-size: 1.8rem bold;
@@ -12,10 +15,11 @@ body {
   margin: 0 auto;
   background-color: #dcf0c2;
   color: #3d5845;
+  padding-top: 50px;
 }
 
 .logo {
-  height: 50px;
+  height: 40px;
   margin: 20px;
 }
 nav {
@@ -34,7 +38,7 @@ nav {
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 30%;
+  width: 40%;
 }
 nav li {
   list-style: none;
@@ -65,11 +69,8 @@ nav a:focus {
   transition: all 0.3s ease; 
 }
 
-
-
 #welcome-section {
   height: 100vh;
-  padding-top: 60px;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -128,11 +129,14 @@ h4 {
   box-shadow: 2px 2px 5px #808080; 
 }
 
-#skills {
+#tools-techs {
   width: 500px;
+  height: 200px;
   display: flex;
   flex-direction: column;
- 
+  justify-content: center;
+  margin: 0 auto;
+
 }
 .tools-techs {
   display: flex;
@@ -178,11 +182,16 @@ h4 {
   box-shadow: 2px 2px 5px gray;
   margin-top: 15px;
 }
+.project-first-section {
+ 
+  text-align: center;
+}
 .project-second-section {
   height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: center;
 }
 .links{
   padding: 5px;
@@ -225,12 +234,12 @@ h4 {
   width: 400px;
   display: flex;
   justify-content: space-between;
-  margin: 10px 20px 40px 20px;
+  margin: 0 auto
 }
 
 #profile-links a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: #3d5845;
   cursor: pointer;
   display: flex;
@@ -238,8 +247,8 @@ h4 {
 }
 #profile-links a:hover,
 #profile-links a:focus {
-  color: #cfcfcf;
-
+  color: #767e78;
+ 
 }
 /* footer */
 #footer {
@@ -253,11 +262,8 @@ h4 {
   font-size: .8rem;
 }
 @media screen and (max-width: 1150px) {
-  nav {
-    height: 70px;
-  }
   .logo {
-    margin-left: 50px;
+    margin-left: 20px;
   }
   .nav-links {
     width: 50%;
@@ -265,7 +271,6 @@ h4 {
   #welcome-section {
     background-repeat: no-repeat;
     height: 100vh;
-    
   }
   .intro {
     width: 80%;
@@ -278,15 +283,20 @@ h4 {
   }
 }
 @media screen and (max-width: 990px) {
+  body {
+    padding-top: 60px;
+  }
   .logo {
-    margin: 0 30px;
-    padding: 5px;
+    margin: 10px;
+    
+  }
+  .nav-links {
+    width: 55%;
   }
   #welcome-section {
     background-repeat: no-repeat;
     justify-content: center;
     height: 70vh;
-    padding-top: 80px;
   }
   .intro {
     width: 60%;
@@ -331,22 +341,23 @@ h4 {
 } 
 
 @media screen and (max-width: 768px) {
+  html {
+    scroll-padding-top: 100px; /* height of sticky header */
+  }
   body {
     overflow-x: hidden;
+    padding-top: 30px;
   }
   .logo {
     margin: 0;
     padding: 5px;
   }
-  nav {
-    height: 60px;
-    padding: 20px;
-  }
+
   .nav-links {
     position: absolute;
     right: 0px;
-    height: 92vh;
-    top: 8vh;
+    height: 95vh;
+    top: 5vh;
     background-color: #dcf0c2;
     display: flex;
     flex-direction: column;
@@ -368,11 +379,14 @@ h4 {
     width: 100%;
     height: 70vh;
     justify-content: center;
-    padding-top: 80px;
+    
   }
   .intro {
     width: 80%;
     
+  }
+  #profile-links a {
+    font-size: 2rem;
   }
   .project-tile {
     width: 100%;
@@ -407,21 +421,18 @@ h4 {
 
 
   @media screen and (max-width: 560px) {
-    nav {
-      height: 40px;
-      padding: 20px;
-    }
     .logo {
-      padding: 10px 0;
+      padding: 5px 5px;
     }
     .nav-links {
       height: 95vh;
       top: 5.5vh;
     }
+    
     #welcome-section {
       height: 50vh;
       justify-content: center;
-      padding-top: 40px;
+      
     }
     .intro {
       padding: 10px;
@@ -440,6 +451,9 @@ h4 {
     .intro a {
       font-size: 0.6rem;
       margin: 20px;
+    }
+    #profile-links a {
+      font-size: 1.5rem;
     }
     .links {
       margin : 20px;
@@ -470,7 +484,7 @@ h4 {
       margin: 0 auto;
     }
   }
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 500px) {
     nav {
       width: 100vw;
     }
@@ -482,18 +496,19 @@ h4 {
     }
     #welcome-section {
       width: 100vw;
-      height: 40vh;
+      height: 50vh;
       justify-content: center;
-      padding-top: 50px;
+      padding-top: 20px
     }
     .intro {
       padding: 10px;
       margin: 0;
     }
-    #skills {
+    #tools-techs {
       width: 300px;
       display: flex;
       flex-direction: column;
+      margin: 0 auto;
     }
     .tools-techs {
       width: 100%;
@@ -518,9 +533,8 @@ h4 {
   }
   @media screen and (max-width: 360px) {
     #welcome-section {
-      padding-top: 30px;
+      height: 40vh;
     }
-    
     h1, h2 {
       font-size: .8em;
     }
