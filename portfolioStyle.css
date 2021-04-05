@@ -18,10 +18,13 @@ body {
   padding-top: 50px;
 }
 
-.logo {
-  height: 40px;
-  margin: 20px;
+#github-link {
+  padding: 0;
+  margin: 0;
+  height: 50px;
 }
+
+
 nav {
   position: fixed;
   top: 0;
@@ -43,20 +46,51 @@ nav {
 nav li {
   list-style: none;
 }
-nav a {
+.a-links {
   text-decoration: none;
   color: #2e673f;
   cursor: pointer;
   padding: 10px;
   
 }
-nav a:hover,
-nav a:focus {
+.a-links:hover,
+.a-links:focus {
   border-radius: 20px;
   color:  #f8f6f6;
   box-shadow: 2px 2px 5px grey;
   background-color: #3d5845;
 }
+.logo {
+  height: 30px;
+  margin: 10px 20px;
+  cursor: pointer;
+}
+.logo:hover {
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px grey;
+  width: 36px;
+  height: 31px;
+}
+.logo-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  
+}
+.logo-description {
+  position: absolute; 
+  visibility: hidden;
+  opacity: 0;
+  bottom: 16px;
+  left: 65px;
+  width:200px;
+  transition: opacity .2s, visibility .2s;
+}
+.logo-wrap:hover .logo-description {
+  visibility: visible;
+  opacity: 1;
+}
+
 .burger {
   display: none;
   cursor: pointer;
@@ -95,7 +129,7 @@ h1 {
 }
 h2 {
   text-align: center;
-  margin-top: 0;
+  margin-bottom: 20px;
 }
 h3 { 
   margin-top: 0;
@@ -286,10 +320,10 @@ h4 {
   body {
     padding-top: 60px;
   }
-  .logo {
+  /* .logo {
     margin: 10px;
     
-  }
+  } */
   .nav-links {
     width: 55%;
   }
@@ -348,10 +382,7 @@ h4 {
     overflow-x: hidden;
     padding-top: 30px;
   }
-  .logo {
-    margin: 0;
-    padding: 5px;
-  }
+ 
 
   .nav-links {
     position: absolute;
@@ -373,6 +404,7 @@ h4 {
   }
   .burger {
     display: block;
+    margin: 0 20px;
   }
   #welcome-section {
     background-repeat: no-repeat;
@@ -421,9 +453,9 @@ h4 {
 
 
   @media screen and (max-width: 560px) {
-    .logo {
+    /* .logo {
       padding: 5px 5px;
-    }
+    } */
     .nav-links {
       height: 95vh;
       top: 5.5vh;
