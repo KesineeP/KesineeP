@@ -108,16 +108,18 @@ nav li {
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   text-align: center;
   background-image: url('./images/welcome-img.jpg');
   background-size: 100%;
+  padding-bottom: 30px;
 }
 .intro {
   border: 5px #dcf0c2 dotted;
   border-radius: 20px;
   padding: 40px;
+  margin-bottom: 40px;
   width: 50%;
 }
 
@@ -128,6 +130,7 @@ h1 {
   margin: 0;
 }
 h2 {
+  font-size: 1.5rem;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -170,22 +173,74 @@ h4 {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-
+  
 }
 .tools-techs {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  
+}
+#contact {
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#profile-links {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#profile-links a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #3d5845;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+#profile-links a:hover,
+#profile-links a:focus {
+  color: #767e78;
+ 
+}
+.div-tooltips {
+  background-color: rgb(200, 230, 193);
+  border-radius: 5px;
+  opacity: 0.7
+}
+#fcc {
+  display: none;
+  padding: 5px 20px;
+}
+#github {
+  display: none;
+  padding: 5px 20px;
+ 
+}
+#linkedin {
+  display: none;
+  padding: 5px 20px;
+}
+#email {
+  display: none;
+  padding: 5px 20px;
 }
 .icons {
   font-size: 3rem;
   color: #3d5845;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20px;
 }
-.icons:hover
-.icons:focus {
-  color: #cfcfcf;
-  text-shadow: 2px 2px 5px #808080;
-}
+
 
 #projects {
   text-align: center;
@@ -255,35 +310,7 @@ h4 {
    background-color:  #3d5845;
 }
  /* contact */
-#contact {
-  width: 100%;
-  height: auto;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-#profile-links {
-  width: 400px;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto
-}
-
-#profile-links a {
-  text-decoration: none;
-  font-size: 2.5rem;
-  color: #3d5845;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-}
-#profile-links a:hover,
-#profile-links a:focus {
-  color: #767e78;
- 
-}
 /* footer */
 #footer {
   color: #3d5845;
@@ -304,10 +331,17 @@ h4 {
   }
   #welcome-section {
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 90vh;
+    justify-content: space-evenly;
   }
   .intro {
     width: 80%;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  #profile-links a {
+    font-size: 2rem;
   }
   .project-preview {
     margin-bottom: 0;
@@ -318,7 +352,7 @@ h4 {
 }
 @media screen and (max-width: 990px) {
   body {
-    padding-top: 60px;
+    padding-top: 50px;
   }
   /* .logo {
     margin: 10px;
@@ -331,6 +365,7 @@ h4 {
     background-repeat: no-repeat;
     justify-content: center;
     height: 70vh;
+    
   }
   .intro {
     width: 60%;
@@ -411,7 +446,7 @@ h4 {
     width: 100%;
     height: 70vh;
     justify-content: center;
-    
+    padding-bottom: 20px;
   }
   .intro {
     width: 80%;
@@ -452,10 +487,10 @@ h4 {
 
 
 
-  @media screen and (max-width: 560px) {
-    /* .logo {
-      padding: 5px 5px;
-    } */
+  @media screen and (max-width: 660px) {
+    body {
+      padding-top: 50px
+    }
     .nav-links {
       height: 95vh;
       top: 5.5vh;
@@ -495,9 +530,13 @@ h4 {
     p {
       font-size: 0.8rem;;
     }
-    .icons {
+    a .icons {
       font-size: 1.5rem;
     }
+    a span {
+      font-size: 0.5rem;
+    }
+    
     .project-preview {
       margin-bottom: 0;
       width: 200px;
@@ -528,26 +567,36 @@ h4 {
     }
     #welcome-section {
       width: 100vw;
-      height: 50vh;
+      height: 40vh;
       justify-content: center;
-      padding-top: 20px
+      
     }
     .intro {
       padding: 10px;
       margin: 0;
     }
+    .tooltip {
+      font-size: 0.5rem; 
+    }
     #tools-techs {
-      width: 300px;
+      height: 250px;
+      width: 60%;
       display: flex;
       flex-direction: column;
       margin: 0 auto;
     }
     .tools-techs {
-      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 10px;
     }
+  
+    
     .icons {
       font-size: 1rem;
       color: #3d5845;
+      justify-self: center;
     }
     .project-preview {
       margin: 0;
