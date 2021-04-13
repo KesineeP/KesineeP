@@ -34,7 +34,7 @@ const showTooltip = () => {
                 if (item === icons[2]) tooltip[2].style.display = 'block'
                 if (item === icons[3]) tooltip[3].style.display = 'block'
             })
-        }, false)
+        })
 
         item.addEventListener('mouseout', () => {
             tooltip.forEach(() => {
@@ -43,23 +43,7 @@ const showTooltip = () => {
                 if (item === icons[2]) tooltip[2].style.display = 'none'
                 if (item === icons[3]) tooltip[3].style.display = 'none'
             })
-        }, false)
+        })
     });
-    //     let tooltip = '';
-    //     let tooltipDiv = document.querySelector('.div-tooltips');
-    //     let tooltipElements = Array.from(document.querySelectorAll('.hover-reveal'));
-
-    //     const displayTooltip = (e, obj) => {
-    //         tooltip = obj.dataset.tooltip;
-    //         tooltipDiv.innerHTML = tooltip;
-    //         tooltipDiv.style.top = e.pageY + 'px';
-    //         tooltipDiv.style.left = e.pageX + 'px';
-    //         tooltipDiv.style.opacity = 1;
-    //     }
-    //     tooltipElements.forEach((elem) => {
-    //         elem.addEventListener('mouseenter', (e) => {
-    //             displayTooltip(e, this)
-    //         })
-    //     })
 }
 showTooltip()
